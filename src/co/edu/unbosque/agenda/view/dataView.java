@@ -6,12 +6,14 @@ import javax.swing.*;
 
 public class dataView {
 	JFrame mainFrameDataView;
-	JLabel mainLabelDataView = new JLabel("Ingrese los datos");
+	JLabel mainLabelDataView = new JLabel("Ingrese la tarea");
 	JLabel titleLabelDataView = new JLabel("Título: ");
 	JLabel descLabelDataView = new JLabel("Descripción: ");
 	JLabel footerLabelDataView = new JLabel();
+	JLabel emailLabelDataView = new JLabel("Correo:");
 	JTextArea descFieldDataView = new JTextArea();
 	JTextField titleFieldDataView = new JTextField();
+	JTextField emailFieldDataView = new JTextField();
 	JButton sendDataButtonDataView = new JButton("Enviar");
 	JButton historyButtonDataView = new JButton("Ver mensaje");
 	public dataView() {
@@ -25,6 +27,15 @@ public class dataView {
 		mainLabelDataView.setBounds(100, 30, 400, 40);
 		mainLabelDataView.setFont(new Font("Serif", Font.BOLD, 24));
 		mainFrameDataView.add(mainLabelDataView);
+		
+		//emailLabel section
+		emailLabelDataView.setBounds(30, 70, 400, 40);
+		emailLabelDataView.setFont(new Font("Serif", Font.BOLD, 16));
+		mainFrameDataView.add(emailLabelDataView);
+		
+		//emailField section
+		emailFieldDataView.setBounds(90, 81, 240, 20);
+		mainFrameDataView.add(emailFieldDataView);
 		
 		//titleLabel section
 		titleLabelDataView.setBounds(30, 100, 400, 40);
